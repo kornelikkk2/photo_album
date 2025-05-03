@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Устанавливает шрифт Arial или, если он недоступен, любой шрифт без засечек */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    /* Задает ширину контейнера 80% от ширины родительского элемента,
+       выравнивает контейнер по центру и добавляет внутренние отступы по 20px */
+}
+
+h2 {
+    text-align: center;
+    /* Выравнивает заголовки уровня h2 по центру */
+}
+
+form {
+    margin-bottom: 20px;
+    /* Добавляет нижний отступ 20px для формы */
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Задает стиль текстовым, файловым полям и полям для ввода пароля */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Задает стиль кнопкам*/
+}
+
+button:hover {
+    background-color: blueviolet;
+    /* Устанавливает цвет фона синий фиолетовый (blueviolet) при наведении на кнопку */
+}
+
+.error {
+    color: red;
+    text-align: center;
+    /* Задает стиль для элементов с классом .error*/
+}
+
+.success {
+    color: blueviolet;
+    text-align: center;
+    /* Задает стиль для элементов с классом .success*/
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Задает стиль для контейнера альбома */
+}
+
+.photo {
+    flex: 1 0 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    /* Задает стиль для каждого фото в альбоме*/
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* Задает стиль изображениям*/
+}
+
+.photo form {
+    display: inline;
+    /* Задает блочно-строчный режим отображения для форм внутри элементов с классом .photo */
+}
